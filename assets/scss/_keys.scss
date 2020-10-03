@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-.button-container {
+.keys {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: auto auto auto 30%;
@@ -29,7 +29,7 @@
     }
   }
 
-  .sum {
+  .equals {
     background-color: darken($secondary, 10%);
 
     &:hover {
