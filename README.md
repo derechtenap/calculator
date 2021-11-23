@@ -1,3 +1,2 @@
 # calculator
-
-My own simple calculator made with HTML, SCSS and JavaScript
+Calculator made with HTML, SCSS and JavaScript
