@@ -14,12 +14,44 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
   display: flex;
+  justify-content: center;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 8px;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 4px;
+}
+
+.calculator button {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+
+input#display {
+  pointer-events: none;
 }
 
 @media (prefers-color-scheme: light) {
