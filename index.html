@@ -2,41 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="/assets/js/calculator.js"></script>
+
   <title>Calculator</title>
-  <link rel="stylesheet" href="assets/css/calc.min.css" />
 </head>
 
-<body>
-  <div class="container">
-    <div class="calculator">
-      <h1 class="display" id="display">0</h1>
-      <div class="keys">
-        <button type="button" class="special in">IN</button>
-        <button type="button" class="special ce">CE</button>
-        <button type="button" class="special power">x<sup>2</sup></button>
-        <button type="button" class="operator divide">&divide;</button>
-        <button type="button" class="number seven">7</button>
-        <button type="button" class="number eight">8</button>
-        <button type="button" class="number nine">9</button>
-        <button type="button" class="operator times">&times;</button>
-        <button type="button" class="number four">4</button>
-        <button type="button" class="number five">5</button>
-        <button type="button" class="number six">6</button>
-        <button type="button" class="operator plus">&plus;</button>
-        <button type="button" class="number one">1</button>
-        <button type="button" class="number two">2</button>
-        <button type="button" class="number three">3</button>
-        <button type="button" class="operator minus">&minus;</button>
-        <button type="button" class="plus_minus">+/-</button>
-        <button type="button" class="number zero">0</button>
-        <button type="button" class="comma">,</button>
-        <button type="button" class="equals">&equals;</button>
-      </div>
-    </div>
+<body class="container">
+  <input type="text" name="display" id="display" value="0" />
+
+  <div class="buttons">
+    <button type="button">AC</button>
+    <button type="button">+/-</button>
+    <button type="button">%</button>
+    <button type="button">&div;</button>
+
+    <button type="button">7</button>
+    <button type="button">8</button>
+    <button type="button">9</button>
+    <button type="button">&times;</button>
+
+    <button type="button">4</button>
+    <button type="button">5</button>
+    <button type="button">6</button>
+    <button type="button">&minus;</button>
+
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">&plus;</button>
+
+    <button type="button">0</button>
+    <button type="button">&comma;</button>
+    <button type="button">&equals;</button>
   </div>
-  <script src="assets/js/calculator.js"></script>
 </body>
 
 </html>
